@@ -1,3 +1,22 @@
+# Project Status
+
+Doing anything with BLE from node is in a pretty bad place just now, so I can't build this as well as I'd like.
+For me, after installing manually, this plugin will run fine 9 times out of 10 (with the 10th time requiring a reboot).
+If it doesn't run for you then, sorry.
+
+If anyone wants to start a new version of this my advice would be to avoid node completely:
+
+- Use https://github.com/HomeSpan/HomeSpan on the ESP32
+- Create an on-device web page to manage the blinds instead of Homebridge (not that Homebridge is bad, just that it's not needed for HomeSpan)
+- Use the BLE command codes defined in this project to talk to the blinds (feel free to @ me if anything's not 100% clear)
+- Leave the ESP32 plugged in somewhere connected to BLE & WiFi
+
+That'll be a lot more reliable & work for a lot more people, but requires doing embedded work in C++.
+I'd do it myself but, as I said, this plugin works fine for me.
+
+---
+
+
 Builds off of https://github.com/renssies/homebridge-am43-blinds but in typescript instead, with some additional features, but (due to BLE differences between plaforms) it'll likely only work on Raspberry Pi (/ other linux) based homebridge instances.
 
 # Homebridge AM43 Blinds
